@@ -4,13 +4,56 @@
     android:layout_height="match_parent"
     android:background="@color/Pink">
 
-    <TextView
-        android:id="@+id/tvhome"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="My Order Fragment"
-        android:textColor="#ffffff"
-        android:textSize="32sp"
-        android:layout_centerInParent="true"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="8dp">
+
+            <Button
+                android:id="@+id/btapple"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Apples"
+                android:textAllCaps="false"
+                android:background="@drawable/button_view"
+                android:layout_marginLeft="8dp"/>
+
+            <Button
+                android:id="@+id/btMango"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mango"
+                android:textAllCaps="false"
+                android:layout_toRightOf="@id/btapple"
+                android:background="@drawable/button_view"
+                android:layout_marginLeft="8dp"/>
+
+            <Button
+                android:id="@+id/btpears"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pears"
+                android:textAllCaps="false"
+                android:layout_toRightOf="@id/btMango"
+                android:background="@drawable/button_view"
+                android:layout_marginLeft="8dp"/>
+            <Button
+                android:id="@+id/btpromegranate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Promegranate"
+                android:textAllCaps="false"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/button_view"
+                android:layout_marginRight="8dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"/>
+
+        </RelativeLayout>
+    </ScrollView>
 
 </RelativeLayout>

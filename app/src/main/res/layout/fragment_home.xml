@@ -4,13 +4,51 @@
     android:layout_height="match_parent"
     android:background="@color/Green">
 
-    <TextView
-        android:id="@+id/tvhome"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Home Fragment"
-        android:textColor="#ffffff"
-        android:textSize="32sp"
-        android:layout_centerInParent="true"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="8dp">
+
+            <ImageView
+                android:id="@+id/appleimage"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/apple"/>
+
+            <ImageView
+                android:id="@+id/mangoimage"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/mango"
+                android:layout_toRightOf="@id/appleimage"/>
+
+            <ImageView
+                android:id="@+id/pearsimage"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/pears"
+                android:layout_toRightOf="@id/mangoimage"/>
+
+            <ImageView
+                android:id="@+id/promegranateimage"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/promegranate"
+                android:layout_toRightOf="@id/pearsimage"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerview"
+                android:layout_below="@id/appleimage"
+                android:layout_margin="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+
+        </RelativeLayout>
+    </ScrollView>
 
 </RelativeLayout>
