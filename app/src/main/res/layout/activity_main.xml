@@ -24,8 +24,8 @@
 
         <ImageView
             android:id="@+id/backImage"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
             android:layout_below="@id/toolbar"
             android:layout_marginTop="8dp"
             android:clickable="true"
@@ -36,11 +36,12 @@
             android:id="@+id/tvheader"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_above="@id/search"
-            android:layout_centerHorizontal="true"
-            android:layout_marginBottom="8dp"
             android:text="Catagory"
-            android:textSize="24sp" />
+            android:layout_below="@id/toolbar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
 
         <androidx.appcompat.widget.SearchView
             android:id="@+id/search"
@@ -49,8 +50,11 @@
             android:layout_below="@id/backImage"
             android:layout_marginTop="8dp"
             android:layout_marginBottom="8dp"
+            android:elevation="@dimen/cardview_default_elevation"
+            android:translationX="4dp"
+            android:translationY="4dp"
             android:background="@drawable/circular_view"
-            android:padding="4dp" />
+            />
 
 
         <FrameLayout
