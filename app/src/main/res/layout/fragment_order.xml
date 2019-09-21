@@ -23,7 +23,7 @@
                 android:textAllCaps="false" />
 
             <Button
-                android:id="@+id/btMango"
+                android:id="@+id/btmango"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="8dp"
@@ -37,7 +37,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="8dp"
-                android:layout_toRightOf="@id/btMango"
+                android:layout_toRightOf="@id/btmango"
                 android:background="@drawable/buuton_pressed"
                 android:text="Pears"
                 android:textAllCaps="false" />
