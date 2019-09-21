@@ -18,7 +18,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="8dp"
-                android:background="@drawable/button_view"
+                android:background="@drawable/buuton_pressed"
                 android:text="Apples"
                 android:textAllCaps="false" />
 
@@ -28,7 +28,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="8dp"
                 android:layout_toRightOf="@id/btapple"
-                android:background="@drawable/button_view"
+                android:background="@drawable/buuton_pressed"
                 android:text="Mango"
                 android:textAllCaps="false" />
 
@@ -38,7 +38,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="8dp"
                 android:layout_toRightOf="@id/btMango"
-                android:background="@drawable/button_view"
+                android:background="@drawable/buuton_pressed"
                 android:text="Pears"
                 android:textAllCaps="false" />
 
@@ -48,7 +48,7 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
                 android:layout_marginRight="8dp"
-                android:background="@drawable/button_view"
+                android:background="@drawable/buuton_pressed"
                 android:paddingLeft="8dp"
                 android:paddingRight="8dp"
                 android:text="Promegranate"
