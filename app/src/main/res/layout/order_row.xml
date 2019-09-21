@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:background="#66D3E21A">
+
+    <ImageView
+        android:id="@+id/orderImage"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_margin="8dp"
+        android:elevation="@dimen/cardview_compat_inset_shadow"
+        android:padding="16dp"
+        android:src="@drawable/imaage" />
+
+    <TextView
+        android:id="@+id/tvappleName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@id/orderImage"
+        android:padding="8dp"
+        android:text="Example Name"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/tvCountryName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvappleName"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@id/orderImage"
+        android:padding="8dp"
+        android:text="Country name"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/tvweight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvCountryName"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@id/orderImage"
+        android:padding="8dp"
+        android:text="Net .Kg" />
+
+    <LinearLayout
+        android:id="@+id/order_linaerlayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/orderImage"
+        android:layout_marginTop="8dp"
+        android:background="@color/Light_green">
+
+
+        <TextView
+            android:id="@+id/tvRupee1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:drawableLeft="@drawable/ic_stack"
+            android:drawableTint="#BE3949A3"
+            android:text="   120's - INR 2800 / Box"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btAdd1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_marginLeft="32dp"
+            android:background="@drawable/new_button_view"
+            android:minHeight="24dp"
+            android:text="Add"
+            android:textAllCaps="false" />
+
+        <TextView
+            android:layout_width="36dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="32dp"
+            android:background="#C40B300F" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/order_linaerlayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/order_linaerlayout1"
+        android:layout_marginTop="8dp"
+        android:background="@color/Light_green"
+        android:layout_marginBottom="8dp">
+
+
+        <TextView
+            android:id="@+id/tvRupee2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:drawableLeft="@drawable/ic_stack"
+            android:drawableTint="#BE3949A3"
+            android:text="   135's - INR 2700 / Box"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btAdd2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_marginLeft="32dp"
+            android:background="@drawable/new_button_view"
+            android:minHeight="24dp"
+            android:text="Add"
+            android:textAllCaps="false" />
+
+        <TextView
+            android:layout_width="36dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="32dp"
+            android:background="#C40B300F" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

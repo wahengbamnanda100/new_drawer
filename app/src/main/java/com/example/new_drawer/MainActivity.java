@@ -28,6 +28,8 @@ public class MainActivity extends AppCompatActivity {
 
         drawerLayout = findViewById(R.id.drawer_layout);
 
+        //Top ham Burgur drawer
+
         NavigationView navigationView = findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
@@ -88,6 +90,8 @@ public class MainActivity extends AppCompatActivity {
             navigationView.setCheckedItem(R.id.nav_home);
         }
     }
+
+    // Bottom Navigatio bar
 
     private BottomNavigationView.OnNavigationItemSelectedListener bottomListner = new BottomNavigationView.OnNavigationItemSelectedListener() {
         @Override
