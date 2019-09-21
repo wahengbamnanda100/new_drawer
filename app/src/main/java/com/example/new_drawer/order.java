@@ -69,7 +69,38 @@ public class order extends Fragment {
             @Override
             public void onClick(View view) {
 
+                fruitsList.clear();
                 apple();
+                adapter.notifyDataSetChanged();
+            }
+        });
+
+        btMango.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                fruitsList.clear();
+                mango();
+                adapter.notifyDataSetChanged();
+            }
+        });
+
+        btPears.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                fruitsList.clear();
+                pears();
+                adapter.notifyDataSetChanged();
+            }
+        });
+
+        btPro.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                fruitsList.clear();
+                pro();
                 adapter.notifyDataSetChanged();
             }
         });
