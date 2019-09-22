@@ -3,12 +3,12 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="8dp"
-    >
+    android:elevation="@dimen/cardview_default_elevation">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#C2F093">
+        android:background="#518BC34A">
 
         <ImageView
             android:id="@+id/orderImage"
@@ -17,6 +17,7 @@
             android:layout_margin="8dp"
             android:elevation="@dimen/cardview_compat_inset_shadow"
             android:padding="16dp"
+            android:clickable="true"
             android:src="@drawable/imaage" />
 
         <TextView
@@ -27,6 +28,8 @@
             android:layout_toRightOf="@id/orderImage"
             android:padding="8dp"
             android:text="Example Name"
+            android:elevation="@dimen/cardview_default_elevation"
+            android:clickable="true"
             android:textSize="24sp" />
 
         <TextView
@@ -75,7 +78,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
                 android:layout_marginLeft="32dp"
-                android:background="@drawable/new_button_view"
+                android:background="@drawable/buuton_pressed"
                 android:minHeight="24dp"
                 android:text="Add"
                 android:textAllCaps="false" />
@@ -114,7 +117,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
                 android:layout_marginLeft="32dp"
-                android:background="@drawable/new_button_view"
+                android:background="@drawable/buuton_pressed"
                 android:minHeight="24dp"
                 android:text="Add"
                 android:textAllCaps="false" />

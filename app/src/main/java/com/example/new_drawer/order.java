@@ -108,7 +108,7 @@ public class order extends Fragment {
         btPro.setOnClickListener(this);
         btPears.setOnClickListener(this);
 */
-        populatedata();
+        apple();
         adapter.notifyDataSetChanged();
 
 

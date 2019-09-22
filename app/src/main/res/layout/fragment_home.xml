@@ -2,53 +2,67 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/Green">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#7ACDD86B">
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <RelativeLayout
+       <!-- <LinearLayout
+            android:id="@+id/linearhome"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginTop="8dp">
 
             <ImageView
                 android:id="@+id/appleimage"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:src="@drawable/apple"/>
+                android:layout_weight="1"
+                android:src="@drawable/imaage" />
 
             <ImageView
                 android:id="@+id/mangoimage"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:src="@drawable/mango"
-                android:layout_toRightOf="@id/appleimage"/>
+                android:layout_weight="1"
+                android:src="@drawable/imaage" />
 
             <ImageView
                 android:id="@+id/pearsimage"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:src="@drawable/pears"
-                android:layout_toRightOf="@id/mangoimage"/>
+                android:layout_weight="1"
+                android:src="@drawable/imaage" />
 
             <ImageView
                 android:id="@+id/promegranateimage"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:src="@drawable/promegranate"
-                android:layout_toRightOf="@id/pearsimage"/>
+                android:layout_weight="1"
+                android:src="@drawable/imaage" />
+        </LinearLayout>-->
 
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/recyclerview"
-                android:layout_below="@id/appleimage"
-                android:layout_margin="8dp"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"/>
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/searchview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:elevation="@dimen/cardview_default_elevation"
+        android:clickable="true"
+        app:iconifiedByDefault="false"
+        app:queryHint="Search here..."
+        android:background="@drawable/circular_view"
+        />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/homerecyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_below="@id/searchview"/>
+            <!--android:layout_below="@id/linearhome"-->
 
 
-        </RelativeLayout>
-    </ScrollView>
 
 </RelativeLayout>

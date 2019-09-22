@@ -43,18 +43,6 @@
             android:textSize="16sp"
             android:textStyle="bold"/>
 
-        <androidx.appcompat.widget.SearchView
-            android:id="@+id/search"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/backImage"
-            android:layout_marginTop="8dp"
-            android:layout_marginBottom="8dp"
-            android:elevation="@dimen/cardview_default_elevation"
-            android:translationX="4dp"
-            android:translationY="4dp"
-            android:background="@drawable/circular_view"
-            />
 
 
         <FrameLayout
@@ -62,7 +50,8 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_above="@id/bottom_bar"
-            android:layout_below="@id/search" />
+            android:layout_below="@id/tvheader"
+            android:layout_marginTop="8dp"/>
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
             android:id="@+id/bottom_bar"
@@ -79,7 +68,7 @@
     <com.google.android.material.navigation.NavigationView
         android:id="@+id/nav_view"
         android:layout_width="wrap_content"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_gravity="start"
         app:headerLayout="@layout/nav_header"
         app:menu="@menu/drawer_menu" />

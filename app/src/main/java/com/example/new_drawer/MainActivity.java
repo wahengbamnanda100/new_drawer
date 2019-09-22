@@ -3,6 +3,7 @@ package com.example.new_drawer;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.SearchView;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
@@ -16,7 +17,12 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationView;
 
 public class MainActivity extends AppCompatActivity {
+
     private DrawerLayout drawerLayout;
+
+    SearchView searchView;
+
+    order_adapter adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -89,6 +95,10 @@ public class MainActivity extends AppCompatActivity {
                     new home()).commit();
             navigationView.setCheckedItem(R.id.nav_home);
         }
+
+        /*searchView = findViewById(R.id.searchview);
+        searchView.setOnQueryTextListener(this);
+*/
     }
 
     // Bottom Navigatio bar
@@ -130,4 +140,18 @@ public class MainActivity extends AppCompatActivity {
             super.onBackPressed();
         }
     }
+
+    /*@Override
+    public boolean onQueryTextSubmit(String query) {
+        return false;
+    }
+
+    @Override
+    public boolean onQueryTextChange(String newText) {
+
+        String text = newText;
+        adapter.filter(text);
+
+        return false;
+    }*/
 }
